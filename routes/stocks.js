@@ -4,7 +4,7 @@ const { authenticateToken } = require('../middleware/auth');
 const { pool } = require('../db/database');
 const router = express.Router();
 
-const TD_KEY  = process.env.TWELVE_DATA_KEY || '1c915d66ba984eef845b39ced0fe7482';
+const TD_KEY  = process.env.TWELVE_DATA_KEY;
 const TD_BASE = 'https://api.twelvedata.com';
 
 const NSE_STOCKS = [
